@@ -1,13 +1,13 @@
 import {
-  whatTheFuckJustHappenedToday,
+  getToday,
   getStatus,
   getAllDailyPages,
 } from './';
 
 describe('client', () => {
-  describe('whatTheFuckJustHappenedToday', () => {
+  describe('getToday', () => {
     it('get successful response', async () => {
-      const response = await whatTheFuckJustHappenedToday();
+      const response = await getToday();
       expect(response).toBeDefined();
     });
   });
